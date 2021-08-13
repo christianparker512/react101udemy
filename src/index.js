@@ -13,7 +13,7 @@ function App(){
         return (
         <div>
                 {users.map(user =>(
-                    <Welcome name={user.name} age={user.age}/>
+                    <Welcome key={user.id } name={user.name} age={user.age}/>
                         ))};
         </div>
         );
